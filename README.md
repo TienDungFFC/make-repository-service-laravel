@@ -4,27 +4,27 @@ A package for addding `php artisan make:repository`, `php artisan make:service` 
 ## Installation
 Require the package with composer using the following command:
 
-`composer require thanhnamcnv/laravel-make-repository-service --dev`
+`composer require dungnt/laravel-make-repository-service --dev`
 
 Or add the following to your composer.json's require-dev section and `composer update`
 
 ```json
 "require-dev": {
-          "thanhnamcnv/laravel-make-repository-service": "^2.*"
+          "dungnt/laravel-make-repository-service": "^2.*"
 }
 ```
 
-In your config/app.php add NamTran\LaravelMakeRepositoryService\RepositoryServiceProvider::class to the end of the providers array:
+In your config/app.php add Dungnt\LaravelMakeRepositoryService\RepositoryServiceProvider::class to the end of the providers array:
 ```php
 'providers' => [
     ...
-    NamTran\LaravelMakeRepositoryService\RepositoryServiceProvider::class,
+    Dungnt\LaravelMakeRepositoryService\RepositoryServiceProvider::class,
 ],
 ```
 
 Publish Configuration
 ```bash
-php artisan vendor:publish --provider "NamTran\LaravelMakeRepositoryService\RepositoryServiceProvider"
+php artisan vendor:publish --provider "Dungnt\LaravelMakeRepositoryService\RepositoryServiceProvider"
 ```
 
 ## Usage
